@@ -1,0 +1,135 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protege Mulher</title>
+    <link rel="stylesheet" href="../static/tela.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="topbar">
+        <div class="logo-area">
+            <div class="logo">
+                <img src="../static/imagens/logo.jpg.png">
+            </div>
+            <span>Rede do Cuidar</span>
+        </div>
+        <i class="ri-menu-line menu-icon"></i>
+    </header>
+
+    <!-- TÍTULO -->
+    <section class="titulo-area">
+        <i class="ri-heart-add-line icone-principal"></i>
+        <h1>Rede do Cuidar</h1>
+        <p>
+            Para cada <strong>Mulher</strong> um caminho de 
+            <strong>Cuidado, Apoio e orientação</strong> ao seu <stron>Alcance</strong> 
+    </section>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container">
+
+        <!-- BOTÃO 1 -->
+        <div class="card">
+            <button class="card-header">
+
+                <div class="img-box">
+                    <img src="../static/imagens/imagemmulheresmil.jpg" alt="icone">
+                </div>
+            
+                <span class="card-title">Programa Mulheres Mil</span>
+            
+                <i class="ri-arrow-down-s-line seta"></i>
+            </button>
+            <div class="card-content">
+                <p>O Programa Mulheres Mil é uma iniciativa do Governo Federal brasileiro, por meio do Ministério da Educação (MEC), que oferece formação profissional gratuita para mulheres em situação de vulnerabilidade social, buscando sua inclusão educacional, social e produtiva, com foco em empoderamento, superação da violência e equidade de gênero, por meio de cursos de qualificação técnica e cidadã em parceria com Institutos Federais e redes de ensino. 
+
+                    É possível consultar vagas e oportunidades no Painel de Oportunidades no portal do MEC. 
+                </p>
+            </div>
+        </div>
+
+        <!-- BOTÃO 2 -->
+        <div class="card">
+            <button class="card-header">
+
+                <div class="img-box">
+                    <img src="../static/imagens/imagembrotar.jpg" alt="icone">
+                </div>
+            
+                <span class="card-title">Programa Brotar</span>
+            
+                <i class="ri-arrow-down-s-line seta"></i>
+            </button>
+            <div class="card-content">
+                <p>O Programa Brotar, do Ministério Público de Pernambuco (MPPE), é uma iniciativa que visa auxiliar e remunerar mulheres em situação de vulnerabilidade econômica decorrente de violência doméstica e familiar. 
+                    O programa funciona como uma política afirmativa, garantindo a reserva de, no mínimo, 5% das vagas em contratos de prestação de serviços contínuos e com dedicação exclusiva de mão de obra firmados pelo MPPE para essas mulheres. O objetivo principal é promover a inclusão social e a autonomia financeira, como um passo importante para a retomada da cidadania e a saída do ciclo de violência.</p>
+            </div>
+        </div>
+        <div class="card">
+            <button class="card-header">
+
+                <div class="img-box">
+                    <img src="../static/imagens/imagemprotegemulher.jpg" alt="icone">
+                </div>
+            
+                <span class="card-title">Protege Mulher</span>
+            
+                <i class="ri-arrow-down-s-line seta"></i>
+            </button>
+            <div class="card-content">
+                <p>O Protege Mulher é uma plataforma digital (aplicativo web) do Governo de Pernambuco, criada pela Secretaria da Mulher para oferecer acolhimento, orientação e canais de denúncia seguros para mulheres vítimas de violência, especialmente importunação sexual em espaços públicos (ônibus, metrô, ruas). A ferramenta, acessada pelo navegador (sem download) via protegemulher.pe.gov.br ou QR Codes, conta com uma assistente virtual, facilita o registro anônimo de ocorrências, mapeia casos para políticas públicas e direciona para a rede de apoio especializada. .</p>
+            </div>
+        </div>
+        <div class="card">
+            <button class="card-header">
+
+                <div class="img-box">
+                    <img src="../static/imagens/imagemcidadaniafeminina.jpg" alt="icone">
+                </div>
+            
+                <span class="card-title">Grupo de Mulheres Cidadania Feminina</span>
+            
+                <i class="ri-arrow-down-s-line seta"></i>
+            </button>
+            <div class="card-content">
+                <p>O Grupo de Mulheres Cidadania Feminina é uma organização social (ONG) com sede no Recife, PE, que atua na defesa dos direitos sociais e no enfrentamento à violência contra a mulher. 
+                    Principais Ações e Projetos
+                    Enfrentamento à Violência: Um dos projetos notáveis da organização é o "Apitaço". Nele, apitos são distribuídos às mulheres da comunidade para serem usados como um alerta coletivo em situações de risco ou agressão, mobilizando a rede de apoio local.
+                    Empoderamento Social e Econômico: O grupo busca despertar o potencial empreendedor social das mulheres na comunidade, oferecendo acesso a oficinas de cidadania e alfabetização, visando a melhoria da qualidade de vida e a autonomia financeira.</p>
+            </div>
+        </div>
+        
+    </main>
+
+    <!-- MENU INFERIOR -->
+    <nav class="menu-bottom">
+        <a href="tela.html" class="nav-item">
+            <i class="ri-home-5-line"></i>
+            <span>Início</span>
+        </a>
+        <a href="telamapa.html" class="nav-item">
+            <i class="ri-share-line"></i>
+            <span>Mapa</span>
+        </a>
+        <a href="telacontato.html" class="nav-item">
+            <i class="ri-edit-box-line"></i>
+            <span>Contato de Emergência</span>
+        </a>
+    </nav>
+
+    <!-- SCRIPT PARA EXPANDIR OS BOTÕES -->
+    <script>
+        const cards = document.querySelectorAll(".card");
+
+        cards.forEach(card => {
+            const header = card.querySelector(".card-header");
+            header.addEventListener("click", () => {
+                card.classList.toggle("open");
+            });
+        });
+    </script>
+
+</body>
+</html>

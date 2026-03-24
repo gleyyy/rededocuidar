@@ -1,0 +1,179 @@
+/* GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f4effa;
+    padding-bottom: 80px; /* espaço pro menu */
+}
+
+/* HEADER */
+.topbar {
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo img {
+    width: 30px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* TÍTULO */
+.titulo-area {
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.icone-principal {
+    font-size: 60px;
+    color: #6b3fa0;
+}
+
+.titulo-area h1 {
+    margin-top: 10px;
+    font-size: 32px;
+    color: #4d2a78;
+}
+
+.titulo-area p {
+    margin-top: 10px;
+    color: #555;
+    max-width: 350px;
+    margin-inline: auto;
+}
+
+/* CARDS (BOTÕES EXPANSÍVEIS) */
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    border: 1px solid #eee;
+}
+
+.card-header {
+    width: 100%;
+    background: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.card-header .icon {
+    font-size: 25px;
+    color: #6b3fa0;
+}
+
+.card-header span {
+    font-size: 18px;
+    font-weight: 600;
+    flex: 1;
+    margin-left: 15px;
+}
+
+.card-content {
+    padding: 0 20px 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.card.open .card-content {
+    max-height: 200px;
+}
+
+.card.open .seta {
+    transform: rotate(180deg);
+}
+.img-box {
+    width: 200px;
+    height: 120px;
+    background: #f0e6ff;       /* fundo clarinho lilás */
+    border-radius: 12px;        /* bordas arredondadas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+/* Imagem dentro do retângulo */
+.img-box img {
+    width: 100%;                 /* imagem menor */
+    height: 100%;
+    border-radius: 10%;
+}
+
+/* Ajuste para alinhar tudo no header */
+.card-header {
+    display: flex;
+    align-items: center;
+    padding: 25px 20px;
+}
+
+.card-title {
+    flex: 1;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* MENU INFERIOR */
+.menu-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff7ff;
+    border-top: 1px solid #e8d9f4;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #6b3fa0;
+    text-align: center;
+    font-size: 13px;
+}
+
+.nav-item i {
+    font-size: 22px;
+    display: block;
+    margin-bottom: 3px;
+}

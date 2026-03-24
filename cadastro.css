@@ -1,0 +1,153 @@
+/* ======== FUNDO DA PÁGINA ======== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: #522e42; /* lilás suave */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ======== CONTAINER CENTRAL ======== */
+.container {
+    width: 85%;
+    max-width: 1000px;
+    background: #fff;
+    border-radius: 22px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.12);
+
+    /* altura automática para não cortar nada */
+    min-height: 520px;
+}
+
+/* ======== BOX ESQUERDA (CADASTRO) ======== */
+.esquerda-box {
+    width: 50%;
+    padding: 45px 45px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.esquerda-box h2 {
+    font-size: 32px;
+    color: #522e42;
+    margin-bottom: 10px;
+}
+
+.esquerda-box p {
+    font-size: 15px;
+    color: #6d6d6d;
+    margin-bottom: 25px;
+}
+
+/* Inputs */
+.input-group {
+    margin-bottom: 18px;
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 42px;
+    padding: 0 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: .2s;
+}
+
+.input-group input:focus {
+    border-color: #522e42;
+}
+
+/* Botão */
+button {
+    margin-top: 15px;
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(90deg, #5d344a, #522e42);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover {
+    opacity: .9;
+}
+
+/* ======== BOX DIREITA (IMAGEM) ======== */
+.direita-box {
+    width: 50%;
+    background: #864a6b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.direita-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ======== RESPONSIVIDADE ======== */
+
+/* Tela média */
+@media (max-width: 900px) {
+    .container {
+        width: 95%;
+        max-width: 750px;
+    }
+    .esquerda-box h2 {
+        font-size: 28px;
+    }
+}
+
+/* Tela pequena */
+@media (max-width: 760px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .esquerda-box,
+    .direita-box {
+        width: 100%;
+    }
+
+    .direita-box {
+        height: 250px; /* evita cortar imagem */
+    }
+
+    .direita-box img {
+        object-fit: contain;
+    }
+}
+
+/* Celular */
+@media (max-width: 480px) {
+    .esquerda-box {
+        padding: 30px 25px 40px;
+    }
+
+    .esquerda-box h2 {
+        font-size: 24px;
+    }
+}
